@@ -37,6 +37,7 @@ export default [
       '@stylistic/ts/keyword-spacing': ["error", { "before": true }],
       '@stylistic/ts/no-extra-parens': "warn",
       '@stylistic/ts/quotes': ["error", "single"],
+      '@stylistic/ts/object-curly-spacing': ['warn', 'always'],
       'react/jsx-uses-react': 'error',
       'react/jsx-uses-vars': 'error',
       'react/self-closing-comp': 'error',
@@ -46,7 +47,7 @@ export default [
         'unnamedComponents': 'arrow-function'
       }],
       "react/jsx-boolean-value": ['error', "never"],
-      'react/jsx-curly-brace-presence': 'error',
+      'react/jsx-curly-brace-presence': ['warn', 'always'],
       'react/jsx-curly-newline': ['error', {
         'multiline': 'consistent',
         'singleline': 'consistent',
@@ -62,7 +63,7 @@ export default [
       "react/jsx-indent-props": ['warn', 'tab'],
       "react/jsx-key": ['error', { "checkFragmentShorthand": true, checkKeyMustBeforeSpread: true }],
       "react/jsx-max-props-per-line": ['warn', { "maximum": { "single": 3 } }],
-      "react/jsx-no-literals": ['warn', {"noStrings": true }],
+      "react/jsx-no-literals": ['warn'],
       "react/jsx-no-undef": ['error', { "allowGlobals": true }],
       "react/jsx-no-useless-fragment": 'warn',
       "react/jsx-one-expression-per-line": ['warn', { "allow": "none" }],
@@ -89,7 +90,6 @@ export default [
       "react/no-unescaped-entities": ['error'],
       "react/no-unknown-property": ['error'],
       'react/no-unstable-nested-components': ['error'],
-      'react/react-in-jsx-scope': 'error'
   },
 }
   // {languageOptions: { globals: globals.browser }},
